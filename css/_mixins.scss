@@ -1,0 +1,27 @@
+@mixin main_title_separator($width, $color) {
+  width: $width;
+  height: 3px;
+  background-color: $color;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+@mixin main_title_font_family() {
+  font-family: "Playfair Display", "Helvetica Neue", Arial, sans-serif;
+}
+
+@mixin letter_spacing() {
+  letter-spacing: 0.5px;
+}
+
+@mixin certificateBg($location) {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.001),
+      rgba(0, 0, 0, 0.001)
+    ),
+    url($location);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
