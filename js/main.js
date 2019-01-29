@@ -16,7 +16,7 @@ const menuLinks = document.querySelectorAll(".nenu_link");
 const linkFollower = document.querySelector(".follow_link");
 const contactTitle = document.querySelector(".form_title");
 
-// initialize value holding variable to toggle
+// initialize variables holding html classes to toggle
 const hideProfilePicture = "hide_profile_picture";
 const animateMobileMenue = "animateOut";
 const hideTheMobileMenue = "hideTheMobileMenue";
@@ -27,7 +27,7 @@ const navBarLocation = navBar.getBoundingClientRect();
 const firstMainTitleOffset = firstMainTitle.offsetTop + navBarLocation.height;
 
 //**
-//@param {HTMLElement} element  the element toggled on
+//@param {HTMLElement}  the element on which to  toggle the class passed as second argument
 //@param {String} className  the class name to add/remove to the element
 function togglePicture(element, className) {
   element.classList.toggle(className);
@@ -154,24 +154,3 @@ menuLinks.forEach(link =>
     }, 1000);
   })
 );
-
-// document.addEventListener("scroll", function(e) {
-//   if (isInTheViewPort(contactTitle)) {
-//     console.log("I am in the view port !");
-//   } else {
-//     console.log("I am out of the view port ");
-//   }
-// });
-
-// function isInTheViewPort(element) {
-//   const elementBounds = element.getBoundingClientRect();
-
-//   return (
-//     elementBounds.left >= 0 &&
-//     elementBounds.top >= 0 &&
-//     elementBounds.right <=
-//       (window.innerWidth || document.documentElement.clientWidth) &&
-//     elementBounds.bottom <=
-//       (window.innerHeight || document.documentElement.clientHeight)
-//   );
-// }
