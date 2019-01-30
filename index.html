@@ -80,7 +80,7 @@
                         <p class="bg_main_title">Who Am I ?</p>
                         <p class="main_title first_main_title">Who Am I ?</p>
                         <div class="main_title_separator"></div>
-                        <p class="sub_text">Self-motivated, ambitious, enthusiast, constant leaner, I am <span class="highlight">Ephraim Ilunga</span>, 28 years old, Self-taught Web Developer aspiring Mobile Developer, with 2 years experience in the field. I have a strong sens of morality and integrety that lead me to get highest level of satisfaction from <a class="highlight" href="#">clients</a> and <a class="highlight" href="#">companies</a> where I have been.</p>
+                        <p class="sub_text">Self-motivated, ambitious, enthusiast, constant leaner, I am <span class="highlight">Ephraim Ilunga</span>, 28 years old, Self-taught Web Developer aspiring Mobile Developer, with 2 years experience in the field. I have a strong sens of morality and integrety that lead me to get highest level of satisfaction from <a class="highlight" href="#">companies</a> where I have been.</p>
 
                         <a class="download_cv_link" download="cv" href="">
                             <p class="download_cv_text">Download the CV</p>
@@ -118,7 +118,7 @@
 
                 <div class="email_container">
                     <img class="contact_info" src="./icons/mail.svg" alt="">
-                    <p class="email_text"><a href="mailto:ephraimilunga@gmail.com">ephraimilunga@gmail.com</a></p>
+                    <p class="email_text"><a href="mailto:contact@ephraimilunga.co.za">contact@ephraimilunga.co.za</a></p>
                 </div>
             </div>
         </div>
@@ -954,7 +954,7 @@
                                     <img class="personal_logo" src="./icons/egallery_logo.png" alt=" ">
                                 </div>
                                 <div class="link_to_github_container">
-                                    <a class="gitbut_project" href="#"><img class="personal_projects_github" src="./icons/github4.svg" alt=""></a>
+                                    <a class="gitbut_project" href="https://github.com/Ephrey/eGallery"><img class="personal_projects_github" src="./icons/github4.svg" alt=""></a>
                                 </div>
                             </div>
                     
@@ -1033,7 +1033,7 @@
     
     
                             <div class="link_to_the_certificate">
-                                <a class="highlight" href="#">Open the certificate</a>
+                                <a  data-name="mongodb" class="highlight open_certificate mongodb show_certificate" href="#">Open the certificate</a>
                             </div>
     
                         </div>
@@ -1057,12 +1057,12 @@
                             </div>
                     
                             <div class="certificate_overview_container">
-                                <p class="certificate_overview_text">From the basics to advanced concepts such as ES6, this course gave me a solid understanding of Javascript.</p>
+                                <p class="certificate_overview_text">From the basics to advanced concepts such as ES6, this course gives a solid understanding of Javascript.</p>
                             </div>
                     
                     
                             <div class="link_to_the_certificate">
-                                <a class="highlight" href="#">Open the certificate</a>
+                                <a data-name="fcc" class="highlight open_certificate fcc show_certificate" href="#">Open the certificate</a>
                             </div>
                     
                         </div>
@@ -1086,12 +1086,12 @@
                             </div>
                     
                             <div class="certificate_overview_container">
-                                <p class="certificate_overview_text">Follwing this course I have learned the best practices as well as how Javascript works under the hood.</p>
+                                <p class="certificate_overview_text">This course teachs the best practices as well as how Javascript works under the hood.</p>
                             </div>
                     
                     
                             <div class="link_to_the_certificate">
-                                <a class="highlight" href="#">Open the certificate</a>
+                                <a data-name="mosh" class="highlight open_certificate mosh show_certificate" href="#">Open the certificate</a>
                             </div>
                     
                         </div>
@@ -1120,7 +1120,7 @@
                 
                 
                             <div class="link_to_the_certificate">
-                                <a class="highlight" href="#">Open the certificate</a>
+                                <a data-name="cisco" class="highlight open_certificate cisco show_certificate" href="#">Open the certificate</a>
                             </div>
                 
                         </div>
@@ -1148,7 +1148,7 @@
 
                             <div class="contact_info_container">
                                 <p class="contact_info_title email_title">Email</p>
-                                <p class="email_text sub_contact_info_text"><a style="color:#000" href="mailto:ephreycleophace@gmail.com">ephreycleophace@gmail.com</a></p>
+                                <p class="email_text sub_contact_info_text"><a style="color:#000" href="mailto:contact@ephraimilunga.co.za">contact@ephraimilunga.co.za</a></p>
 
                                 <p class="contact_info_title phone_title">Phone</p>
                                 <p class="phone_text sub_contact_info_text"><a style="color:#000" href="tel:0710545597">+27 (0) 71 054 55 97</a></p>
@@ -1166,27 +1166,30 @@
                         <div class="form_container">
 
                             <div class="inputs_container input_name_container">
-                                <p class="input_placeholder name_placeholder">Name</p>
-                                <input type="text" name="v_name" value="">
+                                <p data-for="v_name" class="input_placeholder name_placeholder">Name</p>
+                                <input class="form_input" type="text" name="v_name" value="">
                             </div>
 
 
                             <div class="inputs_container input_email_container">
-                                <p class="input_placeholder email_placeholder">Email</p>
-                                <input type="email" name="v_email" value="">
+                                <p data-for="v_email" class="input_placeholder email_placeholder">Email</p>
+                                <input class="form_input" type="email" name="v_email" value="">
                             </div>
 
 
                             <div class="inputs_container input_message_container">
-                                <p class="input_placeholder name_placeholder">Message</p>
-                                <textarea class="textarea_form" name="v_message"></textarea>
+                                <p  data-for="v_message" class="input_placeholder name_placeholder">Message</p>
+                                <textarea class="textarea_form form_input" name="v_message"></textarea>
                             </div>
 
                             <div class="underline_submit_button">
-                                <button class="submit">Submit</button>
+                                <button class="submit submit_form">Submit</button>
                                 <div class="underline__button"></div>
                             </div>
 
+                            <div class="form_error_message hide_error"></div>
+
+                            <div class="human_test hide_human_test"></div>
                         </div>
 
                     </div>
@@ -1245,12 +1248,30 @@
                 <li><a class="menu_items menu_skills" href="#my-skills">Skills</a><img src="./icons/menu_circle.svg" alt=""></li>
                 <li><a class="menu_items menu_client_project" href="#client-projects">Client Projects</a><img src="./icons/menu_circle.svg" alt=""></li>
                 <li><a class="menu_items menu_personal_project" href="#personal-project">Personal Projects</a><img src="./icons/menu_circle.svg" alt=""></li>
-                <li><a class="menu_items menu_achievement" href="#achievements">Achievement</a><img src="./icons/menu_circle.svg" alt=""></li>
+                <li><a class="menu_items menu_achievement" href="#achievements">Achievements</a><img src="./icons/menu_circle.svg" alt=""></li>
                 <li><a class="menu_items menu_contact_me" href="#contact-me">Contact Me</a><img src="./icons/menu_circle.svg" alt=""></li>
             </ul>
         </div>
 
         <a class="download_from_menu" download="ephraim-ilunga-cv" href="#"><p>Download the CV</p> <img src="./icons/download_white.svg" alt=""></a>
+    </div>
+</div>
+
+<div class="cerificate_view_container cerificate_view_container_hide">
+    <div class="certificate_content">
+        <div class="download_close_certificate">
+            <img data-name="mongodb" class="logo_academy show_certificate" src="./icons/mogodb_logo.svg" alt="">
+            <img data-name="fcc" class="logo_academy show_certificate" src="./icons/freecodecamp_logo.svg" alt="">
+            <img data-name="mosh" class="logo_academy show_certificate" src="./icons/mosh_logo.svg" alt="">
+            <img data-name="cisco" class="logo_academy show_certificate" src="./icons/cisco_logo.svg" alt="">
+
+            <a class="certificate_image_link" download="" href=""><img class="download_certificate" src="./icons/download_red.svg" alt=""></a>
+            <img class="close_certificate" src="./icons/cancel_icon_red.svg" alt="">
+        </div>
+
+        <div class="certificate_container">
+            <img class="certificate_image_image" src="" alt="">
+        </div>
     </div>
 </div>
 

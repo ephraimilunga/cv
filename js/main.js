@@ -15,13 +15,52 @@ const chevronDown = document.querySelector(".chevron_down");
 const menuLinks = document.querySelectorAll(".nenu_link");
 const linkFollower = document.querySelector(".follow_link");
 const contactTitle = document.querySelector(".form_title");
+const openCertificateButton = document.querySelectorAll(".open_certificate");
+const mainCertificateViewContaienr = document.querySelector(
+  ".cerificate_view_container"
+);
+const certificateImage = document.querySelector(".certificate_image_image");
+const certificateLink = document.querySelector(".certificate_image_link");
+const inputs = document.querySelectorAll(".form_input");
+const inputsPlaceholder = document.querySelectorAll(".input_placeholder");
+const contactContainer = document.querySelector(".form_contact_section");
+const errorContainer = document.querySelector(".form_error_message");
+const submitForm = document.querySelector(".submit_form");
+const humanTest = document.querySelector(".human_test");
+const name = document.querySelector("input[type='text']");
+const email = document.querySelector("input[type='email']");
+const message = document.querySelector("textarea");
 
 // initialize variables holding html classes to toggle
+const movePlaceholderTop = "move_placeholder_top";
+const movePlaceholderNormal = "move_placeholder_normal";
+const hideError = "hide_error";
+const showError = "show_error";
+const showHumanTest = "show_human_test";
+const hideHumanTest = "hide_human_test";
 const hideProfilePicture = "hide_profile_picture";
 const animateMobileMenue = "animateOut";
 const hideTheMobileMenue = "hideTheMobileMenue";
+const hideCertificateContainer = "cerificate_view_container_hide";
+const showCertificateContainer = "cerificate_view_container_show";
 let num = 0;
 const className = "animate_bar";
+
+const constHumageTestMessage = `
+  <p class="human_message">I'am not a robot</p>
+  <p class="human_sub_message">Click the white circle</p>
+  <button class="validator valid confirm">0</button>
+`;
+
+const thankYouMessage = `
+ <div class="thank_you_message_container">
+      <div class="thank_you_message_content">
+          <p class="thank_you_main_message">Message sent !</p>
+          <p class="thank_you_sub_message">Thank for contacting me. I'll be back to you soon</p>
+          <p class="thank_you_sub_sub_message">Regards !</p>
+      </div>
+  </div> 
+`;
 
 const navBarLocation = navBar.getBoundingClientRect();
 const firstMainTitleOffset = firstMainTitle.offsetTop + navBarLocation.height;
@@ -53,13 +92,25 @@ function toggle() {
 }
 
 // this function remove the class Name passed as the second argument
-function removeClass(element, className, indicator) {
-  if (indicator === "remove") {
-    element.classList.remove(className);
+function handleAddRemoveClass(element, className, action) {
+  /// get the element length
+  // this will determine if its a Nodelist or an single html element
+  const elementLength = element.length;
+
+  if (action === "remove") {
+    if (elementLength > 1) {
+      element.forEach(elt => elt.classList.remove(className));
+    } else {
+      element.classList.remove(className);
+    }
   }
 
-  if (indicator === "add") {
-    element.classList.add(className);
+  if (action === "add") {
+    if (elementLength > 1) {
+      element.forEach(elt => elt.classList.add(className));
+    } else {
+      element.classList.add(className);
+    }
   }
 }
 
@@ -112,18 +163,19 @@ window.addEventListener("scroll", changeTheNavBarBackground);
 
 let isFirstAnimation = true;
 
-// this function change the clicked menu link ot white and set other links to red
+// this function change the clicked menu link to white and set other links to red
 function changeTheColorOfMenuLinks(hash) {
   menuLinks.forEach(link => {
     if (link.getAttribute("href") !== hash) {
-      removeClass(link, "redColor", "add");
-      removeClass(link, "whiteColor", "remove");
+      handleAddRemoveClass(link, "redColor", "add");
+      handleAddRemoveClass(link, "whiteColor", "remove");
     } else {
-      removeClass(link, "redColor", "remove");
-      removeClass(link, "whiteColor", "add");
+      handleAddRemoveClass(link, "redColor", "remove");
+      handleAddRemoveClass(link, "whiteColor", "add");
     }
   });
 }
+
 // listen for the click on each menu link to animate the follower elment
 menuLinks.forEach(link =>
   link.addEventListener("click", function(e) {
@@ -154,3 +206,305 @@ menuLinks.forEach(link =>
     }, 1000);
   })
 );
+
+//******** HANDLE DISPLAY CERTIFICATES  */
+
+// link to certificate
+const certificates = {
+  mongodb: "./images/certificates/mongodb_certificate.png",
+  fcc: "./images/certificates/fcc_Certificate.png",
+  mosh: "./images/certificates/mosh_certificate.png",
+  cisco: "./images/certificates/ccna_certificate.jpg"
+};
+
+//**
+
+/* Append the event (click, mouseover, ...) passed as second argument to the 
+ /* element or nodelist passed as first argument and then call the function passed
+ /* as third argument. 
+ /*
+ /* @param {NodeList/HtmlElement} HtmlElement 
+ /* @param {String} eventName 
+ /* @param {Function} functionThatWillBeCalled 
+ */
+function handleEvents(HtmlElement, eventName, functionThatWillBeCalled) {
+  if (HtmlElement.length > 1) {
+    HtmlElement.forEach(item =>
+      item.addEventListener(eventName, functionThatWillBeCalled)
+    );
+  } else {
+    HtmlElement.addEventListener(eventName, functionThatWillBeCalled);
+  }
+}
+
+//**
+/* check to see if the html element passed as first argument contains 
+ /* the class name passed as second arument
+ /* @param {HTMLElement} HtmlElement 
+ /* @param {String} className 
+ */
+function hasThisClass(HtmlElement, className) {
+  return HtmlElement.classList.contains(className);
+}
+
+//**
+/* Set the attribute passed as second argument to the value passed as third argument on the html
+ /* element passed as first argument
+ /* @param {HTMLElement} HtmlElement 
+ /* @param {String} attributeName 
+ /* @param {String} value 
+ */
+function setAttribute(HtmlElement, attributeName, value) {
+  HtmlElement.setAttribute(attributeName, value);
+}
+
+//**
+/* Display or hide the cerificate container
+ /* @param {Event} e 
+ */
+function displayViewCertificateContainer(e) {
+  if (hasThisClass(mainCertificateViewContaienr, hideCertificateContainer)) {
+    handleAddRemoveClass(
+      mainCertificateViewContaienr,
+      hideCertificateContainer,
+      "remove"
+    );
+    handleAddRemoveClass(
+      mainCertificateViewContaienr,
+      showCertificateContainer,
+      "add"
+    );
+  } else {
+    handleAddRemoveClass(
+      mainCertificateViewContaienr,
+      hideCertificateContainer,
+      "add"
+    );
+    handleAddRemoveClass(
+      mainCertificateViewContaienr,
+      showCertificateContainer,
+      "remove"
+    );
+  }
+
+  // show the cerificate that match the block where the user has clicked
+  switchCertificate(e);
+
+  // stop browser default behavior
+  e.preventDefault();
+}
+
+//**
+/* switch the certificates, download the cerificate and close the view container
+ /* @param {Event} e 
+ */
+function switchCertificate(e, certificateName = null) {
+  // get the clicked element
+  const clickedElement = e.target;
+
+  // get the clicked cerificate
+  const clickedCertificate = certificateName || clickedElement.dataset.name;
+
+  //check if the user want to close the container
+  if (hasThisClass(clickedElement, "close_certificate")) {
+    handleAddRemoveClass(
+      mainCertificateViewContaienr,
+      hideCertificateContainer,
+      "add"
+    );
+    handleAddRemoveClass(
+      mainCertificateViewContaienr,
+      showCertificateContainer,
+      "remove"
+    );
+  }
+
+  // switch the conrresponding certificate when the user clicks on an institute logo
+  if (hasThisClass(clickedElement, "show_certificate")) {
+    setAttribute(certificateImage, "src", certificates[clickedCertificate]);
+    setAttribute(certificateLink, "href", certificates[clickedCertificate]);
+    setAttribute(
+      certificateLink,
+      "download",
+      clickedCertificate + "_certificate_@ephraimilunga"
+    );
+  }
+}
+
+//**
+/* Move the place holder out of the input field
+ /* @param {Event} e 
+ */
+function handleMoveThePlaceholder(e) {
+  // get the focused input
+  const focusedInput = e.target;
+
+  // get the input name
+  const inputName = focusedInput.getAttribute("name");
+
+  // loop through all place holder
+  // and move to top the one that match the focused input
+  inputsPlaceholder.forEach(placeholder => {
+    // get the belonging name
+    const placeholderName = placeholder.dataset.for;
+
+    // move the placeholder that match the input
+    if (placeholderName === inputName) {
+      handleAddRemoveClass(placeholder, movePlaceholderTop, "add");
+      handleAddRemoveClass(placeholder, movePlaceholderNormal, "remove");
+    } else {
+      inputs.forEach(input => {
+        // get the input value length
+        const inputValueLength = input.value.length;
+
+        if (inputValueLength < 1 && input !== focusedInput) {
+          // get the input name
+          const emptyInputName = input.getAttribute("name");
+
+          // get the placeholder name for the input is empty
+          const emptyPlaceholderName = document.querySelector(
+            `p[data-for='${emptyInputName}']`
+          );
+
+          handleAddRemoveClass(
+            emptyPlaceholderName,
+            movePlaceholderTop,
+            "remove"
+          );
+          handleAddRemoveClass(
+            emptyPlaceholderName,
+            movePlaceholderNormal,
+            "add"
+          );
+        }
+      });
+    }
+  });
+}
+
+function resetPlaceholderToInitialPosition(e) {
+  // get the clicked element
+  const clickedElement = e.target;
+
+  // remove the class that move the placeholder
+  // this will reset the position to the initial
+  if (!hasThisClass(clickedElement, "form_input")) {
+    inputs.forEach(input => {
+      if (input.value.length < 1) {
+        // get the placeholder that match the current input
+        inputsPlaceholder.forEach(placeholder => {
+          // get the placeholder name
+          const placeholderName = placeholder.dataset.for;
+
+          // get the input name
+          const inputName = input.getAttribute("name");
+
+          // set the empty input's placeholder to its initial position
+          if (inputName === placeholderName) {
+            handleAddRemoveClass(placeholder, movePlaceholderTop, "remove");
+            handleAddRemoveClass(placeholder, movePlaceholderNormal, "add");
+          }
+        });
+      }
+    });
+  }
+}
+
+// ******** VALIDATE CONTACT FORM ******** //
+//**
+/* Test to see if an email is valid
+ /* @param {String} email 
+ */
+function validateEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
+//**
+/* Check to see if a strig is empty
+/* @param {String} str 
+ */
+function validateString(str) {
+  return str.length > 0;
+}
+
+//**
+/* Validate the user input value
+ */
+function isInputValid() {
+  // check for name
+  if (!validateString(name.value)) {
+    displayError("Invalid name");
+    return;
+  }
+
+  // check for the email
+  if (!validateEmail(email.value)) {
+    displayError("Invalid email address");
+    return;
+  }
+
+  // check the message
+  if (!validateString(message.value)) {
+    displayError("Invalid  message");
+    return;
+  }
+
+  // set the human test message
+  humanTest.innerHTML = constHumageTestMessage;
+
+  // dislay the human test
+  handleAddRemoveClass(humanTest, hideHumanTest, "remove");
+  handleAddRemoveClass(humanTest, showHumanTest, "add");
+}
+
+//**
+/* Display the error message to the user
+ /* @param {String} message 
+ */
+function displayError(message) {
+  handleAddRemoveClass(errorContainer, hideError, "remove");
+  handleAddRemoveClass(errorContainer, showError, "add");
+
+  // set the error message
+  errorContainer.innerHTML = message;
+
+  // wait 1s and remove the message
+  setTimeout(() => {
+    handleAddRemoveClass(errorContainer, hideError, "add");
+    handleAddRemoveClass(errorContainer, showError, "remove");
+  }, 3000);
+}
+
+//** */
+function sendEmail(e) {
+  // get the circle
+  const circle = e.target;
+
+  if (hasThisClass(circle, "validator")) {
+    // cleart the input form
+    inputs.forEach(input => (input.value = ""));
+
+    // show sent confirmation message
+    humanTest.innerHTML = thankYouMessage;
+
+    // animate the sent confirmation message container
+    handleAddRemoveClass(humanTest, "animate_human_test", "add");
+
+    // wait 3 seconds to hide the sent  confirmation message
+    setTimeout(() => {
+      handleAddRemoveClass(humanTest, "animate_human_test", "remove");
+      handleAddRemoveClass(humanTest, hideHumanTest, "add");
+      handleAddRemoveClass(humanTest, showHumanTest, "remove");
+      humanTest.innerHTML = "";
+    }, 5000);
+  }
+}
+
+//************* ADD EVENT LISTENER */
+handleEvents(openCertificateButton, "click", displayViewCertificateContainer);
+handleEvents(mainCertificateViewContaienr, "click", switchCertificate);
+handleEvents(inputs, "focus", handleMoveThePlaceholder);
+handleEvents(contactContainer, "click", resetPlaceholderToInitialPosition);
+handleEvents(submitForm, "click", isInputValid);
+handleEvents(humanTest, "click", sendEmail);

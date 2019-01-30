@@ -229,7 +229,7 @@ main {
 
 main div.nav_bar {
   width: 100%;
-  z-index: 9999999999999999999999999999 !important;
+  z-index: 999999999999 !important;
   position: fixed;
   margin-top: -90px;
 }
@@ -391,11 +391,12 @@ main div.self_introduction_profile_picture div.introduction_and_picture_containe
   z-index: 2;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  z-index: 99999999;
+  z-index: 9999999 !important;
 }
 
 main div.self_introduction_profile_picture div.introduction_and_picture_container div.introduction_section {
   position: relative;
+  z-index: 9999999 !important;
 }
 
 main div.self_introduction_profile_picture div.introduction_and_picture_container div.introduction_section a.download_cv_link {
@@ -442,7 +443,6 @@ main div.self_introduction_profile_picture div.introduction_and_picture_containe
 main div.self_introduction_profile_picture img.bubbles {
   width: 470px;
   position: absolute;
-  z-index: 999999 !important;
 }
 
 main div.self_introduction_profile_picture img.bubbles_left {
@@ -450,6 +450,7 @@ main div.self_introduction_profile_picture img.bubbles_left {
   margin-top: -10px;
   top: 0;
   left: 0;
+  z-index: 999999 !important;
 }
 
 main div.self_introduction_profile_picture img.bubbles_right {
@@ -458,6 +459,7 @@ main div.self_introduction_profile_picture img.bubbles_right {
   float: right;
   margin-right: -180px;
   margin-top: -180px;
+  z-index: 99 !important;
 }
 
 @media only screen and (max-width: 640px) {
@@ -477,7 +479,6 @@ main div.contact_details_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 999999999999999999999999 !important;
 }
 
 main div.contact_details_container div.main_wrapper {
@@ -503,6 +504,7 @@ main div.contact_details_container div.main_wrapper div.phone_email_container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 999999999 !important;
 }
 
 main div.contact_details_container div.main_wrapper div.social_media_container img.social_network,
@@ -822,11 +824,11 @@ main div.skills_section {
   widows: 100%;
   background-color: #f7f4f4;
   padding-bottom: 100px;
-  z-index: 99999999 !important;
+  z-index: 9 !important;
 }
 
 main div.skills_section div.main_wrapper {
-  z-index: 9999 !important;
+  z-index: 9 !important;
 }
 
 main div.skills_section div.main_wrapper .skills_title_text_content {
@@ -1399,6 +1401,8 @@ main div.form_contact_section div.main_wrapper div.contact_form_section div.form
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.inputs_container {
@@ -1416,6 +1420,16 @@ main div.form_contact_section div.main_wrapper div.contact_form_section div.form
   font-size: 16px;
   color: #a3a3a3;
   margin-top: 3px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.inputs_container p.move_placeholder_top {
+  margin-top: -21px;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.inputs_container p.move_placeholder_normal {
+  margin-top: 3px;
 }
 
 main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.inputs_container input,
@@ -1424,7 +1438,7 @@ main div.form_contact_section div.main_wrapper div.contact_form_section div.form
   width: 100%;
   font-size: 17px;
   font-weight: 400;
-  color: #a3a3a3;
+  color: #e00303;
   padding: 0 0 5px 0;
   border-bottom: 1px solid #e00303;
   resize: none;
@@ -1472,6 +1486,138 @@ main div.form_contact_section div.main_wrapper div.contact_form_section div.form
   margin-top: 3px;
   -webkit-transition: all 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: all 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.hide_error {
+  margin-top: -50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.show_error {
+  margin-top: 0px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.form_error_message {
+  background-color: #e00303;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.hide_human_test {
+  margin-bottom: -102px;
+  width: 100%;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.show_human_test {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.animate_human_test {
+  -webkit-animation: confirm .5s ease forwards;
+          animation: confirm .5s ease forwards;
+}
+
+@-webkit-keyframes confirm {
+  0% {
+    height: 0%;
+    background-color: rgba(35, 179, 71, 0.232);
+  }
+  100% {
+    height: 100%;
+    background-color: rgba(35, 179, 71, 0.832);
+  }
+}
+
+@keyframes confirm {
+  0% {
+    height: 0%;
+    background-color: rgba(35, 179, 71, 0.232);
+  }
+  100% {
+    height: 100%;
+    background-color: rgba(35, 179, 71, 0.832);
+  }
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test {
+  background-color: #e00303;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test p {
+  color: #fff;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test p.human_message {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test p.human_sub_message {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test button.validator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  color: transparent;
+  cursor: pointer;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test div.thank_you_message_container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test div.thank_you_message_container div.thank_you_message_content {
+  width: 100%;
+  padding: 10px;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test div.thank_you_message_container div.thank_you_message_content p.thank_you_main_message {
+  font-weight: 300;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test div.thank_you_message_container div.thank_you_message_content p.thank_you_sub_message {
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 7px;
+}
+
+main div.form_contact_section div.main_wrapper div.contact_form_section div.form_container div.human_test div.thank_you_message_container div.thank_you_message_content p.thank_you_sub_sub_message {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 main div.footer {
@@ -1881,6 +2027,154 @@ main div.personal_project_description div.project_tools_used {
 
 main div.personal_project_description div.link_to_the_website {
   padding: 0 15px 0 30px !important;
+}
+
+div.cerificate_view_container_hide {
+  opacity: 0;
+  display: none !important;
+}
+
+div.cerificate_view_container_show {
+  -webkit-animation: showIn 0.5s ease forwards;
+          animation: showIn 0.5s ease forwards;
+}
+
+@-webkit-keyframes showIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+div.cerificate_view_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.673);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000000000000000000000 !important;
+}
+
+div.cerificate_view_container div.certificate_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  div.cerificate_view_container div.certificate_content div.download_close_certificate {
+    padding: 10px 10px;
+  }
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.logo_academy,
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.download_certificate,
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.close_certificate {
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.logo_academy {
+  width: 50px;
+  margin-right: 10px;
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.logo_academy:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+@media only screen and (max-width: 480px) {
+  div.cerificate_view_container div.certificate_content div.download_close_certificate img.logo_academy {
+    margin-right: 4px;
+  }
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.logo_academy_active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.download_certificate {
+  width: 28px;
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.download_certificate:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate a.certificate_image_link {
+  margin-left: auto;
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.close_certificate {
+  width: 25px;
+  margin-left: 20px;
+}
+
+div.cerificate_view_container div.certificate_content div.download_close_certificate img.close_certificate:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+div.cerificate_view_container div.certificate_content div.certificate_container {
+  width: 100%;
+  height: 90%;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.cerificate_view_container div.certificate_content div.certificate_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 div.profile_picture_button {
@@ -2319,15 +2613,12 @@ div.animateOut {
   }
   40% {
     border-bottom-left-radius: 60%;
-    *opacity: 0.8;
   }
   50% {
     border-bottom-left-radius: 70%;
-    *opacity: 0.6;
   }
   60% {
     border-bottom-left-radius: 80%;
-    *opacity: 0.4;
   }
   100% {
     border-top-left-radius: 100%;
@@ -2356,15 +2647,12 @@ div.animateOut {
   }
   40% {
     border-bottom-left-radius: 60%;
-    *opacity: 0.8;
   }
   50% {
     border-bottom-left-radius: 70%;
-    *opacity: 0.6;
   }
   60% {
     border-bottom-left-radius: 80%;
-    *opacity: 0.4;
   }
   100% {
     border-top-left-radius: 100%;
@@ -2415,7 +2703,6 @@ div.animateOut {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
-    padding-left: 20px !important;
   }
   div.phone_email_container div.phone_container img.contact_info,
   div.phone_email_container div.email_container img.contact_info {
@@ -2514,6 +2801,12 @@ div.animateOut {
   }
 }
 
+@media only screen and (max-width: 773px) {
+  div.phone_email_container {
+    padding: 0 5px 0 45px !important;
+  }
+}
+
 @media only screen and (max-width: 755px) {
   div.picture_section {
     display: none !important;
@@ -2529,12 +2822,6 @@ div.animateOut {
   }
   a.download_cv_link {
     margin-top: 30px !important;
-  }
-}
-
-@media only screen and (max-width: 773px) {
-  div.phone_email_container {
-    padding: 0 5px 0 45px !important;
   }
 }
 
@@ -2683,11 +2970,14 @@ div.animateOut {
   div.chevron_down_read_more img {
     display: none !important;
   }
+  div.phone_email_container {
+    padding: 5px 13px 5px 15px !important;
+  }
 }
 
-@media only screen and (max-width: 560) {
+@media only screen and (max-width: 560px) {
   div.phone_email_container {
-    padding: 10px 15px 0 5px !important;
+    padding: 5px 15px 0 5px !important;
   }
 }
 

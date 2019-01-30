@@ -255,7 +255,7 @@ main {
   
   div.nav_bar {
     width: 100%;
-    z-index: 9999999999999999999999999999 !important;
+    z-index: 999999999999 !important;
     position: fixed;
     margin-top: -90px;
     
@@ -273,8 +273,7 @@ main {
         height: 10%;
         transition: all 0.5s ease;
         animation: autoHight 0.8s ease 0.1s forwards;
-
-          background-color: color(main);
+        background-color: color(main);
       }
 
       @keyframes autoHight {
@@ -383,13 +382,13 @@ main {
           width: 345px;
           z-index: 2;
           align-self: flex-end;
-          z-index: 99999999;
+          z-index: 9999999 !important;
         }
       }
 
       div.introduction_section {
         position: relative;
-
+          z-index: 9999999 !important;
         a.download_cv_link {
           display: flex;
           align-items: center;
@@ -424,7 +423,6 @@ main {
     img.bubbles {
       width: 470px;
       position: absolute;
-    z-index: 999999 !important;
     }
 
     img.bubbles_left {
@@ -432,6 +430,7 @@ main {
       margin-top: -10px;
       top: 0;
       left: 0;
+      z-index: 999999 !important;
     }
 
     img.bubbles_right {
@@ -440,6 +439,7 @@ main {
       float: right;
       margin-right: -180px;
       margin-top: -180px;
+      z-index: 99 !important;
 
       @media only screen and (max-width: 640px) {
           margin-right: -180px;
@@ -454,7 +454,6 @@ main {
     height: 80px;
     display: flex;
     align-items: center;
-    z-index: 999999999999999999999999 !important;
 
     div.main_wrapper {
       display: flex;
@@ -466,6 +465,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 999999999 !important;
 
         img.social_network {
           width: 35px;
@@ -678,10 +678,10 @@ main {
     widows: 100%;
     background-color: color(bg_semi_red);
     padding-bottom: 100px;
-    z-index: 99999999 !important;
+    z-index: 9 !important;
 
     div.main_wrapper {
-      z-index: 9999 !important;
+      z-index: 9 !important;
     }
 
     div.main_wrapper .skills_title_text_content {
@@ -1165,6 +1165,8 @@ main {
           background-color: #fff;
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
           padding: 30px;
+          position: relative;
+          overflow: hidden;
 
           div.inputs_container {
             position: relative;
@@ -1180,6 +1182,15 @@ main {
               font-size: 16px;
               color: color(writtenIn);
               margin-top: 3px;
+              transition: all 0.4s ease;
+            }
+
+            p.move_placeholder_top {
+              margin-top: -21px;
+            }
+
+            p.move_placeholder_normal {
+              margin-top: 3px;
             }
 
             input,
@@ -1188,7 +1199,7 @@ main {
               width: 100%;
               font-size: 17px;
               font-weight: 400;
-              color: color(writtenIn);
+              color: color(main);
               padding: 0 0 5px 0;
               border-bottom: 1px solid color(main);
               resize: none;
@@ -1234,6 +1245,121 @@ main {
               background-color: color(main);
               margin-top: 3px;
               transition: all 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+            }
+
+          }
+
+          div.hide_error {
+            margin-top: -50px;
+            transition: all 0.5s ease;
+          }
+
+          div.show_error {
+            margin-top: 0px;
+            transition: all 0.5s ease;
+          }
+
+      
+          div.form_error_message {
+            background-color: color(main);
+            padding: 10px;
+            position: absolute;
+            top:0;
+            right:0;
+            font-size: 15px;
+            font-weight: 400;
+            color: color(white_bg);
+            transition: all 0.5s ease;
+          }
+
+          div.hide_human_test {
+            margin-bottom: -102px;
+            width: 100%;
+          }
+        
+          div.show_human_test {
+            width: 100%;
+            margin-bottom: 0px;
+          }
+
+          div.animate_human_test {
+            animation: confirm .5s ease forwards;
+          }
+
+          @keyframes confirm {
+            0% {
+              height: 0%;
+              background-color: rgba(35, 179, 71, 0.232);
+            }
+
+
+            100% {
+              height: 100%;
+              background-color: rgba(35, 179, 71, 0.832);
+            }
+          }
+
+
+          div.human_test {
+            background-color: color(main);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            text-align: center;
+
+            p {
+              color: color(white_bg);
+            }
+
+            p.human_message {
+              font-weight: 300;
+              font-size: 20px;
+              margin-bottom: 8px;
+            }
+
+            p.human_sub_message {
+              font-size: 15px;
+              font-weight: 400;
+              margin-bottom: 5px
+            }
+
+            button.validator {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 3px solid color(white_bg);
+              color: transparent;
+              cursor: pointer;
+            }
+
+            div.thank_you_message_container {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              div.thank_you_message_content {
+                width: 100%;
+                padding: 10px;
+
+                p.thank_you_main_message {
+                  font-weight: 300;
+                  font-size: 26px;
+                  margin-bottom: 10px;
+                }
+                p.thank_you_sub_message {
+                  font-weight: 400;
+                  font-size: 17px;
+                  margin-bottom: 7px;
+                }
+                p.thank_you_sub_sub_message {
+                  font-weight: 400;
+                  font-size: 14px
+
+                }
+              }
             }
           }
         }
@@ -1553,6 +1679,124 @@ main {
   }
   
 }
+
+
+/// *********** CERTIFICATE VIEW COTAINER *********
+div.cerificate_view_container_hide {
+  opacity: 0;
+  display: none !important;
+}
+
+div.cerificate_view_container_show {
+  animation: showIn 0.5s ease forwards;
+  //opacity: 0;
+}
+
+@keyframes showIn {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+div.cerificate_view_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.673);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999999999999999!important;
+
+  div.certificate_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    div.download_close_certificate {
+      width: 100%;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      top:0;
+      left: 0;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+
+      @media only screen and (max-width: 480px) {
+        padding: 10px 10px;
+      }
+
+      img.logo_academy,
+      img.download_certificate, 
+      img.close_certificate {
+        cursor: pointer;
+        transition: all 0.4s ease;
+      }
+
+      img.logo_academy {
+        width: 50px;
+        margin-right: 10px;
+
+        &:hover {
+          transform: translateY(5px);
+        }
+
+        @media only screen and (max-width: 480px) {
+          margin-right: 4px;
+        }
+      }
+
+      img.logo_academy_active {
+          transform: translateY(5px);
+      }
+
+      img.download_certificate {
+        width: 28px;
+
+        &:hover {
+          transform: translateY(5px);
+        }
+      }
+
+      a.certificate_image_link {
+        margin-left: auto;
+      }
+
+      img.close_certificate {
+        width: 25px;
+        margin-left: 20px;
+
+        &:hover {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    div.certificate_container {
+      width: 100%;
+      height: 90%;
+      margin-top: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+    }
+  }
+
+}
+// *********** END CETIFICATE VIEW CONTAINER *********
 
 
 
@@ -1890,17 +2134,14 @@ div.animateOut {
 
   40% {
     border-bottom-left-radius: 60%;
-    *opacity: 0.8;
   }
 
   50% {
     border-bottom-left-radius: 70%;
-    *opacity: 0.6;
   }
 
   60% {
     border-bottom-left-radius: 80%;
-    *opacity: 0.4;
   }
 
   100% {
@@ -1966,7 +2207,6 @@ div.animateOut {
   // resize the phone and email icon/text
   div.phone_email_container {
     justify-content: flex-start !important;
-    padding-left: 20px !important;
 
     div.phone_container,
     div.email_container {
@@ -2103,6 +2343,16 @@ div.animateOut {
 }
 
 
+
+@media only screen and (max-width: 773px) {
+  // push the phone and email container to the right
+  div.phone_email_container {
+    padding: 0 5px 0 45px !important;
+
+  }
+}
+
+
 @media only screen and (max-width: 755px) {
 
   // remove my picture from the view
@@ -2131,14 +2381,6 @@ div.animateOut {
   }
 }
 
-
-@media only screen and (max-width: 773px) {
-  // push the phone and email container to the right
-  div.phone_email_container {
-    padding: 0 5px 0 45px !important;
-
-  }
-}
 
 @media only screen and (max-width: 680px) {
 
@@ -2338,15 +2580,18 @@ div.animateOut {
       display: none !important;
     }
   }
-}
 
-
-@media only screen and (max-width: 560) {
   div.phone_email_container {
-    padding: 10px 15px 0 5px !important;
+    padding: 5px 13px 5px 15px !important;
   }
 }
 
+
+@media only screen and (max-width: 560px) {
+  div.phone_email_container {
+    padding: 5px 15px 0 5px !important;
+  }
+}
 
 @media only screen and (max-width: 540px) {
 

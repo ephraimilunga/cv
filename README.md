@@ -4,6 +4,7 @@ Feel free to :
 
 - Clone,
 - Edit,
+- Distrbute,
 - And use it as your own resume ! :)
 
 # Note
