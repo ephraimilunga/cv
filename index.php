@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ephraim Ilunga - Curriculum Vitae</title>
+    <title>Ephraim Ilunga - Welcome - Curriculum Vitae</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
@@ -142,7 +142,7 @@
                 <p class="bg_main_title">Skills</p>
                 <p class="main_title">Skills</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">The following is a list (not exausitive) of what I am capable of, with a right-side bar showing a percentage that indicate my ability to use the tool. None of them will have 100% as they are continuously evolve year after years and to grab all concept may be impossible</p>
+                <p class="sub_text sub_text_width">The following is a list (not exhaustive) of what I am capable of. The right-side bar indicate my ability to use the tool. None of them will have 100% as they are continuously evolve year after year and to grab all concept may be impossible.</p>
             </div>
 
             <div class="skills_category_title">
@@ -726,7 +726,7 @@
                 <p class="bg_main_title">Client Projects</p>
                 <p class="main_title">Client Projects</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">From the design concept to a live product, here are some real life project that I have built for client. Please see the details on each block.</p>
+                <p class="sub_text sub_text_width">From the design concept to a live product, here are some real life projects that I have built for client. Please see the details on each block.</p>
             </div>
     
             
@@ -783,7 +783,7 @@
                             </div>
                     
                             <div class="project_overview_container">
-                                <p class="project_overview_text project_text_less_margin">is a web app which allows users to locate Doctors, Hospitals, Clinics, Medical Aids, and more all over South-Africa</p>
+                                <p class="project_overview_text project_text_less_margin">is a web app which allows users to locate Doctors, Hospitals, Clinics, Medical Aids, and more, all over South-Africa</p>
                             </div>
                     
                             <div class="project_tools_used project_tools_used_resize">
@@ -859,7 +859,7 @@
                 <p class="bg_main_title">Personal Projects</p>
                 <p class="main_title">Personal Projects</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">Listed bellow are some of my personal projects powered entirely by variouse free APIs such as The Weatherbit (Weather API), Foursquare (Places API), Unsplash (Photos API), and more. Please for a complete list of APIs used in each project, click the Github icon to the right side of each logo.</p>
+                <p class="sub_text sub_text_width">Listed bellow are some of my personal projects powered entirely by various free APIs such as the Weatherbit (Weather API), Foursquare (Places API), Unsplash (Photos API), and more. Please for a complete list of APIs used for each project, click the Github icon to the right side of each logo.</p>
             </div>
     
     
@@ -895,7 +895,7 @@
                             </div>
     
                             <div class="link_to_the_website">
-                                <a class="highlight" target="_blank"  href="https://ephrey.github.io/">visit the website</a>
+                                <a class="highlight" target="_blank"  href="https://www.ephraimilunga.co.za/eweather">visit the website</a>
                             </div>
     
                         </div>
@@ -925,7 +925,7 @@
                             </div>
                     
                             <div class="project_overview_container">
-                                <p class="project_overview_text">Searching for best places to eat, drink, have fun or visit in any city in the world ? If yes use <a href="#" class="highlight">ePlaces</a>.</p>
+                                <p class="project_overview_text">Searching for best places to eat, drink, have fun or visit in any city in the world ? If yes use <a target="_blank" href="https://www.ephraimilunga.co.za/eplaces" class="highlight">ePlaces</a>.</p>
                             </div>
                     
                             <div class="project_tools_used">
@@ -934,7 +934,7 @@
                             </div>
                     
                             <div class="link_to_the_website">
-                                <a class="highlight" target="_blank" href="#">Visit the website</a>
+                                <a class="highlight" target="_blank" href="https://www.ephraimilunga.co.za/eplaces">Visit the website</a>
                             </div>
                     
                         </div>
@@ -964,7 +964,7 @@
                             </div>
                     
                             <div class="project_overview_container">
-                                <p class="project_overview_text">is a Photos base web app which gives the user the sensation of being around the world most beautiful cities through <a href="#" class="highlight">images</a>.</p>
+                                <p class="project_overview_text">A photos base web app which gives the user the sensation of being around the world most beautiful cities through <a target="_blank" href="https://www.ephraimilunga.co.za/egallery" class="highlight">images</a>.</p>
                             </div>
                     
                             <div class="project_tools_used">
@@ -973,7 +973,7 @@
                             </div>
                     
                             <div class="link_to_the_website">
-                                <a class="highlight" target="_blank" href="#">Visit the website</a>
+                                <a class="highlight" target="_blank" href="https://www.ephraimilunga.co.za/egallery">Visit the website</a>
                             </div>
                     
                         </div>
@@ -1007,7 +1007,7 @@
                 <p class="bg_main_title">Certificates</p>
                 <p class="main_title">Certificates</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">Bellow are listed the certificates that I have earned through out my career as Developer and one from Cisco as part of my computer networking knowledge</p>
+                <p class="sub_text sub_text_width">Bellow are listed the certificates of completion that I have earned through out my career as Developer and one from Cisco as part of my Computer Networking Academic years</p>
             </div>
     
     
