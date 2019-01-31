@@ -482,14 +482,33 @@ function sendEmail(e) {
   const circle = e.target;
 
   if (hasThisClass(circle, "validator")) {
-    // cleart the input form
-    inputs.forEach(input => (input.value = ""));
+    // send value to the email sender
 
-    // show sent confirmation message
-    humanTest.innerHTML = thankYouMessage;
+    const username = name.value;
+    const useremail = email.value;
+    const usermessage = message.value;
 
-    // animate the sent confirmation message container
-    handleAddRemoveClass(humanTest, "animate_human_test", "add");
+    // send user values to the mail sender script 
+    const request = new XMLHttpRequest()
+    request.onload = function () {
+      if (this.status === 200 && this.readyState === 4) {
+
+        // cleart the input form
+        inputs.forEach(input => (input.value = ""));
+
+
+        // display the send confirmation email
+        humanTest.innerHTML = thankYouMessage;
+
+
+        // animate the sent confirmation message container
+        handleAddRemoveClass(humanTest, "animate_human_test", "add");
+      } 
+    }
+
+    request.open("POST", "php/email.php")
+    request.setRequestHeader("Content-type", "Application/x-www-form-urlencoded");
+    request.send(`name=${username}&email=${useremail}&message=${usermessage}`);
 
     // wait 3 seconds to hide the sent  confirmation message
     setTimeout(() => {
