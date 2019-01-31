@@ -142,7 +142,7 @@
                 <p class="bg_main_title">Skills</p>
                 <p class="main_title">Skills</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">The following is a list (not exhaustive) of what I am capable of. The right-side bar indicate my ability to use the tool. None of them will have 100% as they are continuously evolve year after year and to grab all concept may be impossible.</p>
+                <p class="sub_text sub_text_width">The following is a list (not exhaustive) of skills from which I can provide valuable services. The right-side bar indicate my ability to use the tool. None of them will have 100% as they are continuously evolve year after year and to grab all concept may be impossible.</p>
             </div>
 
             <div class="skills_category_title">
