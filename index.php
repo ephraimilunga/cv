@@ -826,7 +826,7 @@
                             </div>
                     
                             <div class="link_to_the_website">
-                                <a class="highlight"  target="_blank" href="https://www.knzproperty.co.za">Visit the website</a>
+                                <a class="highlight"  target="_blank" href="https://www.kznproperty.co.za/">Visit the website</a>
                             </div>
                     
                         </div>
