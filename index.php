@@ -80,9 +80,9 @@
                         <p class="bg_main_title">Who Am I ?</p>
                         <p class="main_title first_main_title">Who Am I ?</p>
                         <div class="main_title_separator"></div>
-                        <p class="sub_text">Self-motivated, ambitious, enthusiast, constant leaner, I am <span class="highlight">Ephraim Ilunga</span>, 28 years old, Self-taught Web Developer aspiring Mobile Developer, with 2 years experience in the field. I have a strong sens of morality and integrety that lead me to get highest level of satisfaction from <a class="highlight" href="#">companies</a> where I have been.</p>
+                        <p class="sub_text">Self-motivated, ambitious, enthusiast, constant learner, I am <span class="highlight">Ephraim Ilunga</span>, 28 years old, Self-taught <span class="highlight">Web Developer</span> aspiring Mobile Developer, with 2 years experience in the field. I have a strong sense of morality and integrity that lead me to get the highest level of satisfaction from companies where I have been.</p>
 
-                        <a class="download_cv_link" download="cv" href="">
+                        <a class="download_cv_link" download="cv-ephraim-ilunga" href="./cv/cv-ephraim-ilunga.pdf">
                             <p class="download_cv_text">Download the CV</p>
                             <img src="./icons/download_red.svg" alt="download epharaim cv">
                         </a>
@@ -142,7 +142,7 @@
                 <p class="bg_main_title">Skills</p>
                 <p class="main_title">Skills</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">The following is a list (not exhaustive) of skills from which I can provide valuable services. The right-side bar indicate my ability to use the tool. None of them will have 100% as they are continuously evolve year after year and to grab all concept may be impossible.</p>
+                <p class="sub_text sub_text_width">The following is a list (not exhaustive) of skills from which I can provide valuable services. The right-side bar indicates my ability to use the tool. None of them will have 100% as they are continuously evolving year after year and to grab all concept may be impossible.</p>
             </div>
 
             <div class="skills_category_title">
@@ -726,7 +726,7 @@
                 <p class="bg_main_title">Client Projects</p>
                 <p class="main_title">Client Projects</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">From the design concept to a live product, here are some real life projects that I have built for client. Please see the details on each block.</p>
+                <p class="sub_text sub_text_width">From the design concept to a live product, here are some real-life projects that I have built for clients. Please see the details on each block.</p>
             </div>
     
             
@@ -859,7 +859,7 @@
                 <p class="bg_main_title">Personal Projects</p>
                 <p class="main_title">Personal Projects</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">Listed bellow are some of my personal projects powered entirely by various free APIs such as the Weatherbit (Weather API), Foursquare (Places API), Unsplash (Photos API), and more. Please for a complete list of APIs used for each project, click the Github icon to the right side of each logo.</p>
+                <p class="sub_text sub_text_width">Listed below are some of my personal projects powered entirely by various free APIs such as the Weatherbit (Weather API), Foursquare (Places API), Unsplash (Photos API), and more. Please for a complete list of APIs used for each project, click the Github icon to the right side of each logo.</p>
             </div>
     
     
@@ -886,7 +886,7 @@
                             </div>
     
                             <div class="project_overview_container">
-                                <p class="project_overview_text">A Multilanguages Web App that provide weather information to the user base on his current location.</p>
+                                <p class="project_overview_text">A Multilanguage Web App that provides weather information to the user base on his current location.</p>
                             </div>
     
                             <div class="project_tools_used">
@@ -925,7 +925,7 @@
                             </div>
                     
                             <div class="project_overview_container">
-                                <p class="project_overview_text">Searching for best places to eat, drink, have fun or visit in any city in the world ? If yes use <a target="_blank" href="https://www.ephraimilunga.co.za/eplaces" class="highlight">ePlaces</a>.</p>
+                                <p class="project_overview_text">Searching for the best places to eat, drink, have fun or visit to any city in the world? If yes use <a target="_blank" href="https://www.ephraimilunga.co.za/eplaces" class="highlight">ePlaces</a>.</p>
                             </div>
                     
                             <div class="project_tools_used">
@@ -1007,7 +1007,7 @@
                 <p class="bg_main_title">Certificates</p>
                 <p class="main_title">Certificates</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">Bellow are listed the certificates of completion that I have earned through out my career as Developer and one from Cisco as part of my Computer Networking Academic years</p>
+                <p class="sub_text sub_text_width">Below are listed the certificates of completion that I have earned throughout my career as Developer and one from Cisco as part of my Computer Networking Academic years</p>
             </div>
     
     
@@ -1028,7 +1028,7 @@
                             </div>
     
                             <div class="certificate_overview_container">
-                                <p class="certificate_overview_text">Through out this course, I have learned the fundamental of mongodb Compass, Atlas and the Query Language</p>
+                                <p class="certificate_overview_text">Throughout this course, I have learned the fundamental of MongoDB Compass, Atlas and the Query Language</p>
                             </div>
     
     
@@ -1086,7 +1086,7 @@
                             </div>
                     
                             <div class="certificate_overview_container">
-                                <p class="certificate_overview_text">This course teachs the best practices as well as how Javascript works under the hood.</p>
+                                <p class="certificate_overview_text">This course teaches the best practices as well as how Javascript works under the hood.</p>
                             </div>
                     
                     
@@ -1115,7 +1115,7 @@
                             </div>
                 
                             <div class="certificate_overview_container">
-                                <p class="certificate_overview_text">Through out my Academic Years at Cisco Network Academy, I have learned the fundamental of computer networking</p>
+                                <p class="certificate_overview_text">Throughout my Academic Years at Cisco Network Academy, I have learned the fundamental of computer networking</p>
                             </div>
                 
                 
@@ -1253,7 +1253,7 @@
             </ul>
         </div>
 
-        <a class="download_from_menu" download="ephraim-ilunga-cv" href="#"><p>Download the CV</p> <img src="./icons/download_white.svg" alt=""></a>
+        <a class="download_from_menu" download="cv-ephraim-ilunga" href="./cv/cv-ephraim-ilunga.pdf"><p>Download the CV</p> <img src="./icons/download_white.svg" alt=""></a>
     </div>
 </div>
 
