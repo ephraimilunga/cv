@@ -80,7 +80,7 @@
                         <p class="bg_main_title">Who Am I ?</p>
                         <p class="main_title first_main_title">Who Am I ?</p>
                         <div class="main_title_separator"></div>
-                        <p class="sub_text">Self-motivated, ambitious, enthusiast, constant learner, I am <span class="highlight">Ephraim Ilunga</span>, 28 years old, Self-taught <span class="highlight">Web Developer</span> aspiring Mobile Developer, with 2 years experience in the field. I have a strong sense of morality and integrity that lead me to get the highest level of satisfaction from companies where I have been.</p>
+                        <p class="sub_text">I am <span class="highlight">Ephraim Ilunga</span>, 28 years old, self-taught <span class="highlight">Web Developer</span> and aspiring Mobile Developer with 2 years working experience in the field. I am a motivated, ambitious, enthusiastic person with a strong sense of morality and integrity. This work ethic leads me to provide work of excellent quality.</p>
 
                         <a class="download_cv_link" download="cv-ephraim-ilunga" href="./cv/cv-ephraim-ilunga.pdf">
                             <p class="download_cv_text">Download the CV</p>
@@ -142,7 +142,7 @@
                 <p class="bg_main_title">Skills</p>
                 <p class="main_title">Skills</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">The following is a list (not exhaustive) of skills from which I can provide valuable services. The right-side bar indicates my ability to use the tool. None of them will have 100% as they are continuously evolving year after year and to grab all concept may be impossible.</p>
+                <p class="sub_text sub_text_width">The following is a list of some of the skills that I have, from which I can provide valuable services. The right side-bar indicated the level of ability to use the tool.<br>  The tools are forever changing and updating which allows me to learn the new features and apply them in the work place. For this reason only, none of them will have 100%.</p>
             </div>
 
             <div class="skills_category_title">
@@ -339,7 +339,7 @@
             
                             <div class="tool_name">
                                 <p class="tool_name_text">ReactJS</p>
-                                <p class="tool_sub_info highlight">Learning on progress</p>
+                                <p class="tool_sub_info highlight">Learning in progress</p>
                             </div>
             
                             <div class="tool_percent_container">
@@ -619,7 +619,7 @@
                     <div class="block_title_container">
                         <div class="block_title_content">
                             <img src="./icons/ms_stack.svg" alt="">
-                            <p class="block_title_text">Microsof Office Stack</p>
+                            <p class="block_title_text">Microsoft Office Stack</p>
                         </div>
                         <div class="main_title_separator"></div>
                     </div>
@@ -667,7 +667,7 @@
                     <div class="block_title_container">
                         <div class="block_title_content">
                             <img src="./icons/os_icon.svg" alt="">
-                            <p class="block_title_text">Operating System</p>
+                            <p class="block_title_text">Operating Systems</p>
                         </div>
                         <div class="main_title_separator"></div>
                     </div>
@@ -859,7 +859,7 @@
                 <p class="bg_main_title">Personal Projects</p>
                 <p class="main_title">Personal Projects</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">Listed below are some of my personal projects powered entirely by various free APIs such as the Weatherbit (Weather API), Foursquare (Places API), Unsplash (Photos API), and more. Please for a complete list of APIs used for each project, click the Github icon to the right side of each logo.</p>
+                <p class="sub_text sub_text_width">Listed below are some of my personal projects powered entirely by various free APIs, such as the Weatherbit (Weather API), Foursquare (Places API), Unsplash (Photos API), and more. For a complete list of APIs used for each project, click the Github icon to the right side of each logo.</p>
             </div>
     
     
@@ -886,7 +886,7 @@
                             </div>
     
                             <div class="project_overview_container">
-                                <p class="project_overview_text">A Multilanguage Web App that provides weather information to the user base on his current location.</p>
+                                <p class="project_overview_text">A Multilanguage Web App that provides weather information to the user base on their current location.</p>
                             </div>
     
                             <div class="project_tools_used">
@@ -1007,7 +1007,7 @@
                 <p class="bg_main_title">Certificates</p>
                 <p class="main_title">Certificates</p>
                 <div class="main_title_separator"></div>
-                <p class="sub_text sub_text_width">Below are listed the certificates of completion that I have earned throughout my career as Developer and one from Cisco as part of my Computer Networking Academic years</p>
+                <p class="sub_text sub_text_width">Listed below are the certificates of completion that I have earned throughout my career as Developer and one from Cisco as part of my Computer Networking Academic years</p>
             </div>
     
     
