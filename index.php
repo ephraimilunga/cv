@@ -808,16 +808,16 @@
                         <div class="project_description">
                     
                             <div class="client_logo">
-                                <img src="./icons/kznp_logo.svg" alt="">
+                                <img src="./icons/adrc_logo.svg" alt="">
                             </div>
                     
                             <div class="client_name">
-                                <p class="client_name_text client_project_title_resize">KZNPROPERTY</p>
+                                <p class="client_name_text client_project_title_resize">ADRC MEDIA</p>
                                 <div class="main_title_separator"></div>
                             </div>
                     
                             <div class="project_overview_container">
-                                <p class="project_overview_text project_text_less_margin">is a Kwazulu-Natal home-directory web app which allows users to locate Houses, Apartments, War Houses, Agents ( a form to email them is available) and more.</p>
+                                <p class="project_overview_text project_text_less_margin">is a platform where people can read articles related to law and Alternative Dispute Resolution.</p>
                             </div>
                     
                             <div class="project_tools_used project_tools_used_resize">
@@ -826,7 +826,7 @@
                             </div>
                     
                             <div class="link_to_the_website">
-                                <a class="highlight"  target="_blank" href="https://www.kznproperty.co.za/">Visit the website</a>
+                                <a class="highlight"  target="_blank" href="https://adrc.co.za/media/welcome-to-adrc-media">Visit the website</a>
                             </div>
                     
                         </div>
