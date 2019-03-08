@@ -30,6 +30,9 @@ const humanTest = document.querySelector(".human_test");
 const name = document.querySelector("input[type='text']");
 const email = document.querySelector("input[type='email']");
 const message = document.querySelector("textarea");
+// get elements
+const body = document.querySelector("body");
+const fill = document.querySelector(".fill");
 
 // initialize variables holding html classes to toggle
 const movePlaceholderTop = "move_placeholder_top";
@@ -59,7 +62,7 @@ const thankYouMessage = `
           <p class="thank_you_sub_message">Thank for contacting me. I'll be back to you soon</p>
           <p class="thank_you_sub_sub_message">Regards !</p>
       </div>
-  </div> 
+  </div>
 `;
 
 const navBarLocation = navBar.getBoundingClientRect();
@@ -219,13 +222,13 @@ const certificates = {
 
 //**
 
-/* Append the event (click, mouseover, ...) passed as second argument to the 
+/* Append the event (click, mouseover, ...) passed as second argument to the
  /* element or nodelist passed as first argument and then call the function passed
- /* as third argument. 
+ /* as third argument.
  /*
- /* @param {NodeList/HtmlElement} HtmlElement 
- /* @param {String} eventName 
- /* @param {Function} functionThatWillBeCalled 
+ /* @param {NodeList/HtmlElement} HtmlElement
+ /* @param {String} eventName
+ /* @param {Function} functionThatWillBeCalled
  */
 function handleEvents(HtmlElement, eventName, functionThatWillBeCalled) {
   if (HtmlElement.length > 1) {
@@ -238,10 +241,10 @@ function handleEvents(HtmlElement, eventName, functionThatWillBeCalled) {
 }
 
 //**
-/* check to see if the html element passed as first argument contains 
+/* check to see if the html element passed as first argument contains
  /* the class name passed as second arument
- /* @param {HTMLElement} HtmlElement 
- /* @param {String} className 
+ /* @param {HTMLElement} HtmlElement
+ /* @param {String} className
  */
 function hasThisClass(HtmlElement, className) {
   return HtmlElement.classList.contains(className);
@@ -250,9 +253,9 @@ function hasThisClass(HtmlElement, className) {
 //**
 /* Set the attribute passed as second argument to the value passed as third argument on the html
  /* element passed as first argument
- /* @param {HTMLElement} HtmlElement 
- /* @param {String} attributeName 
- /* @param {String} value 
+ /* @param {HTMLElement} HtmlElement
+ /* @param {String} attributeName
+ /* @param {String} value
  */
 function setAttribute(HtmlElement, attributeName, value) {
   HtmlElement.setAttribute(attributeName, value);
@@ -260,7 +263,7 @@ function setAttribute(HtmlElement, attributeName, value) {
 
 //**
 /* Display or hide the cerificate container
- /* @param {Event} e 
+ /* @param {Event} e
  */
 function displayViewCertificateContainer(e) {
   if (hasThisClass(mainCertificateViewContaienr, hideCertificateContainer)) {
@@ -296,7 +299,7 @@ function displayViewCertificateContainer(e) {
 
 //**
 /* switch the certificates, download the cerificate and close the view container
- /* @param {Event} e 
+ /* @param {Event} e
  */
 function switchCertificate(e, certificateName = null) {
   // get the clicked element
@@ -319,7 +322,7 @@ function switchCertificate(e, certificateName = null) {
     );
   }
 
-  // switch the conrresponding certificate when the user clicks on an institute logo
+  // switch the corresponding certificate when the user clicks on an institute logo
   if (hasThisClass(clickedElement, "show_certificate")) {
     setAttribute(certificateImage, "src", certificates[clickedCertificate]);
     setAttribute(certificateLink, "href", certificates[clickedCertificate]);
@@ -333,7 +336,7 @@ function switchCertificate(e, certificateName = null) {
 
 //**
 /* Move the place holder out of the input field
- /* @param {Event} e 
+ /* @param {Event} e
  */
 function handleMoveThePlaceholder(e) {
   // get the focused input
@@ -413,7 +416,7 @@ function resetPlaceholderToInitialPosition(e) {
 // ******** VALIDATE CONTACT FORM ******** //
 //**
 /* Test to see if an email is valid
- /* @param {String} email 
+ /* @param {String} email
  */
 function validateEmail(email) {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -422,7 +425,7 @@ function validateEmail(email) {
 
 //**
 /* Check to see if a strig is empty
-/* @param {String} str 
+/* @param {String} str
  */
 function validateString(str) {
   return str.length > 0;
@@ -460,7 +463,7 @@ function isInputValid() {
 
 //**
 /* Display the error message to the user
- /* @param {String} message 
+ /* @param {String} message
  */
 function displayError(message) {
   handleAddRemoveClass(errorContainer, hideError, "remove");
@@ -476,7 +479,7 @@ function displayError(message) {
   }, 3000);
 }
 
-//** */
+//** this function send email asynchroniously */
 function sendEmail(e) {
   // get the circle
   const circle = e.target;
@@ -488,26 +491,26 @@ function sendEmail(e) {
     const useremail = email.value;
     const usermessage = message.value;
 
-    // send user values to the mail sender script 
-    const request = new XMLHttpRequest()
-    request.onload = function () {
+    // send user values to the mail sender script
+    const request = new XMLHttpRequest();
+    request.onload = function() {
       if (this.status === 200 && this.readyState === 4) {
-
         // cleart the input form
         inputs.forEach(input => (input.value = ""));
-
 
         // display the send confirmation email
         humanTest.innerHTML = thankYouMessage;
 
-
         // animate the sent confirmation message container
         handleAddRemoveClass(humanTest, "animate_human_test", "add");
-      } 
-    }
+      }
+    };
 
-    request.open("POST", "php/email.php")
-    request.setRequestHeader("Content-type", "Application/x-www-form-urlencoded");
+    request.open("POST", "php/email.php");
+    request.setRequestHeader(
+      "Content-type",
+      "Application/x-www-form-urlencoded"
+    );
     request.send(`name=${username}&email=${useremail}&message=${usermessage}`);
 
     // wait 3 seconds to hide the sent  confirmation message
@@ -520,6 +523,21 @@ function sendEmail(e) {
   }
 }
 
+
+function animateTheFluidElement() {
+  const windowScrollY = window.scrollY;
+  const winInnerHeight = window.innerHeight;
+  const bodyScrollHeigh = body.scrollHeight;
+
+  // convert the pixels in percentage
+  const pixelInPercent = Math.round(
+    (windowScrollY / (bodyScrollHeigh - winInnerHeight)) * 100
+  );
+
+  // set the width of the fluid element.
+  fill.style.width = pixelInPercent + "%";
+}
+
 //************* ADD EVENT LISTENER */
 handleEvents(openCertificateButton, "click", displayViewCertificateContainer);
 handleEvents(mainCertificateViewContaienr, "click", switchCertificate);
@@ -527,3 +545,4 @@ handleEvents(inputs, "focus", handleMoveThePlaceholder);
 handleEvents(contactContainer, "click", resetPlaceholderToInitialPosition);
 handleEvents(submitForm, "click", isInputValid);
 handleEvents(humanTest, "click", sendEmail);
+handleEvents(window, "scroll", animateTheFluidElement);

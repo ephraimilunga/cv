@@ -121,7 +121,7 @@ div.block {
       margin-right: -43px;
     }
   }
-  
+
   div.hover_animate {
     width: 100%;
     height: 100px;
@@ -253,13 +253,28 @@ p.bg_main_title {
 main {
   width: 100%;
   margin-top: 90px;
-  
+
   div.nav_bar {
     width: 100%;
     z-index: 999999999999 !important;
     position: fixed;
     margin-top: -90px;
-    
+    div.main_fill {
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: transparent;
+      bottom: 0;
+      left: 0;
+      transition: all 0.5s ease;
+
+      div.fill {
+        height: 100%;
+        width: 0%;
+        background-color: color(main);
+      }
+    }
+
      div.follow_link {
           position: absolute;
           height: 8px;
@@ -280,9 +295,9 @@ main {
       @keyframes autoHight {
         0%{
           height: 10%;
-        } 
+        }
 
-        
+
 
         100% {
           height: 100%;
@@ -1260,7 +1275,7 @@ main {
             transition: all 0.5s ease;
           }
 
-      
+
           div.form_error_message {
             background-color: color(main);
             padding: 10px;
@@ -1277,7 +1292,7 @@ main {
             margin-bottom: -102px;
             width: 100%;
           }
-        
+
           div.show_human_test {
             width: 100%;
             margin-bottom: 0px;
@@ -1430,7 +1445,7 @@ main {
   }
 
 
-  // mobile menu design 
+  // mobile menu design
   div.menu_icon {
     width: 35px;
     display: flex;
@@ -1451,38 +1466,38 @@ main {
     &:hover {
         div.bar1 {
         width: 50%;
-      } 
+      }
 
       div.bar2 {
         width: 100%;
-      } 
+      }
 
       div.bar3 {
         width: 80%;
-      } 
+      }
 
       div.bar4 {
         width: 100%;
-      } 
+      }
     }
 
 
     div.bar1 {
       width: 100%;
-    } 
+    }
 
     div.bar2 {
       width: 50%;
-    } 
+    }
 
     div.bar3 {
       width: 100%;
-    } 
+    }
 
     div.bar4 {
       width: 80%;
     }
-    
+
     div.animate_bar0 {
       animation: animateBarOne 0.3s cubic-bezier(0.15, 0.885, 0.32, 1.275) 0.7s forwards;
     }
@@ -1495,10 +1510,10 @@ main {
     div.animate_bar3 {
       animation: animateBarOne 0.9s cubic-bezier(0.175, 0.885, 0.02, 1.275) 0.7s forwards;
     }
-    
+
   }
 
-  // animation for each menu bar 
+  // animation for each menu bar
   @keyframes animateBarOne {
     0% {
       transform: translateX(100px)
@@ -1575,7 +1590,7 @@ main {
     div.certificate_overview_container {
         padding: 80px 10px 0 10px !important;
     }
-    
+
   }
 
   @media only screen and (max-width: 998px) {
@@ -1610,11 +1625,11 @@ main {
       display: none;
     }
 
-    // remove paddings from each main skills section 
+    // remove paddings from each main skills section
     // div.skills_section {
     //   padding-bottom: 10px !important;
 
-    // }div.divers_skills 
+    // }div.divers_skills
 
     div.divers_skills {
       margin-top: -30px !important;
@@ -1656,12 +1671,12 @@ main {
       p.tools_list_title {
         font-size: 12px !important;
       }
-      p.tools_list { 
+      p.tools_list {
         font-size: 12px !important;
       }
     }
 
-    div.follow_link { 
+    div.follow_link {
       display: none !important;
     }
   }
@@ -1678,7 +1693,7 @@ main {
         padding: 0 15px 0 30px !important;
       }
   }
-  
+
 }
 
 
@@ -1696,7 +1711,7 @@ div.cerificate_view_container_show {
 @keyframes showIn {
   from {
     opacity: 0;
-  } 
+  }
   to {
     opacity: 1;
   }
@@ -1734,7 +1749,7 @@ div.cerificate_view_container {
       }
 
       img.logo_academy,
-      img.download_certificate, 
+      img.download_certificate,
       img.close_certificate {
         cursor: pointer;
         transition: all 0.4s ease;
@@ -1907,7 +1922,7 @@ div.mobile_menu {
         margin-right: 20px;
         cursor: pointer;
         transition: all 0.5s ease;
-        
+
         &:hover {
           margin-right: 15px;
         }
@@ -1962,7 +1977,7 @@ div.mobile_menu {
       justify-content: center;
       border: 1px solid color(white_bg);
       border-radius: 4px;
-      
+
 
       &:hover {
         width: 80%;
@@ -1970,7 +1985,7 @@ div.mobile_menu {
         img {
           *opacity: 0;
           background-color: color(main);
-          padding: 5px; 
+          padding: 5px;
           border-radius: 50%;
           width: 30px;
           height: 30px;
@@ -2198,7 +2213,7 @@ div.animateOut {
       width: 45px !important;
       height: 45px !important;
       margin: 0 5px 0 0 !important;
-      
+
       img {
         width: 30px !important;
       }
@@ -2226,7 +2241,7 @@ div.animateOut {
     }
   }
 
-  // decrease the margin of the tools block 
+  // decrease the margin of the tools block
   div.left_block {
     margin-right: 10px !important;
   }
@@ -2338,7 +2353,7 @@ div.animateOut {
     }
 
     div.link_to_the_certificate {
-        padding: 80px 20px 0 20px !important; 
+        padding: 80px 20px 0 20px !important;
     }
   }
 }
@@ -2375,7 +2390,7 @@ div.animateOut {
   div.profile_picture_button {
     opacity: 1;
   }
-  
+
   //bring down the download button in header section
   a.download_cv_link {
     margin-top: 30px !important;
@@ -2385,7 +2400,7 @@ div.animateOut {
 
 @media only screen and (max-width: 680px) {
 
-  // change the flex direction of tools containers 
+  // change the flex direction of tools containers
   div.tools_section {
     flex-direction: column !important;
   }
@@ -2428,7 +2443,7 @@ div.animateOut {
     display: none !important;
   }
 
-  // remove all the margin of the tools block 
+  // remove all the margin of the tools block
   div.left_block {
     margin-right: 0px !important;
   }
@@ -2558,7 +2573,7 @@ div.animateOut {
        padding-bottom: 70px !important;
     }
   }
-  
+
 
 
 }
@@ -2661,7 +2676,7 @@ div.animateOut {
     margin: 20px 0 !important;
   }
 
-  // redefine tht style of the footer section 
+  // redefine tht style of the footer section
   div.footer {
 
       div.footer_thank {
@@ -2678,7 +2693,7 @@ div.animateOut {
           background-color: transparent !important;
         }
     }
-  } 
+  }
 }
 
 
@@ -2686,7 +2701,7 @@ div.animateOut {
 @media only screen and (min-width: 1367px) {
   div.main_wrapper {
     width: 1200px;
-    margin: auto;   
+    margin: auto;
   }
 
   main {

@@ -29,12 +29,12 @@
 </head>
 <body>
 <main>
-    
+
     <!--start nav bar-->
     <div class="nav_bar">
-        <!--start Main wrapeer -->
+        <!--start Main wrapper -->
         <div class="main_wrapper">
-            
+
             <div class="logo_container">
                 <img class="logo" src="./icons/logo.png" alt="">
             </div>
@@ -53,12 +53,15 @@
                     <div class="menu_bar bar4 animate_bar3"></div>
                 </div>
             </ul>
-
         </div>
         <!--end Main Wrapper-->
 
-                <!--this is that owesome link follower you saw :)-->
+                <!--this is that awesome link follower you saw :)-->
                 <div class="follow_link round_follow_link"></div>
+                <!-- this the fluid element-->
+                <div class="main_fill">
+                    <div class="fill"></div>
+                </div>
     </div>
     <!--end nav bar-->
 
@@ -129,7 +132,7 @@
 
     <!--chevron down read more-->
     <div class="chevron_down_read_more">
-        <a href="#my-skills"><img class="chevron_down" src="./icons/chevron-thin-down.svg" alt=""></a> 
+        <a href="#my-skills"><img class="chevron_down" src="./icons/chevron-thin-down.svg" alt=""></a>
     </div>
     <!--end chevron down read more-->
 
@@ -137,7 +140,7 @@
     <div id="my-skills" class="skills_section">
 
         <div class="main_wrapper">
-            
+
             <div class="skills_title_text_content next_to_hidden_element">
                 <p class="bg_main_title">Skills</p>
                 <p class="main_title">Skills</p>
@@ -184,34 +187,34 @@
                             <div class="tool_logo">
                                 <img src="./icons/css_icon.svg" alt="">
                             </div>
-                        
+
                             <div class="tool_name">
                                 <p class="tool_name_text">CSS</p>
                             </div>
-                        
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent ninety">90%</div>
                                 </div>
                             </div>
-                        
+
                         </div>
 
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/js_icon.svg" alt="">
                             </div>
-                        
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Javascript</p>
                             </div>
-                        
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent heighty">80%</div>
                                 </div>
                             </div>
-                        
+
                         </div>
 
                     </div>
@@ -225,70 +228,70 @@
                         </div>
                         <div class="main_title_separator"></div>
                     </div>
-                    
+
                     <div class="block_tools_contaienr">
-                    
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/php_icon.svg" alt="">
                             </div>
-                    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">PHP</p>
                             </div>
-                    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent seventy_five">75%</div>
                                 </div>
                             </div>
-                    
+
                         </div>
-                    
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/apache_icon.svg" alt="">
                             </div>
-                    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Apache</p>
                             </div>
-                    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent seventy_five">75%</div>
                                 </div>
                             </div>
-                    
+
                         </div>
 
-                        
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/mysql_icon.svg" alt="">
                             </div>
-                    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">MySQL</p>
                                 <p class="tool_sub_info">Administration Tools : <span class="highlight">phpMyAdmin</span></p>
                             </div>
-                    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent seventy_five">75%</div>
                                 </div>
                             </div>
-                    
+
                         </div>
-                    
-                    
+
+
                     </div>
                 </div>
 
             </div>
 
             <div class="tools_section">
-            
+
                 <div class="block left_block front_end">
                     <div class="block_title_container">
                         <div class="block_title_content">
@@ -297,29 +300,29 @@
                         </div>
                         <div class="main_title_separator"></div>
                     </div>
-            
+
                     <div class="block_tools_contaienr">
-            
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/wordpress_icon.svg" alt="">
                             </div>
-            
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Wordpress</p>
                             </div>
-            
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent seventy_five">75%</div>
                                 </div>
                             </div>
-            
+
                         </div>
-            
+
                     </div>
                 </div>
-            
+
                 <div class="block right_block back_end">
 
                     <div class="block_title_container">
@@ -329,36 +332,36 @@
                         </div>
                         <div class="main_title_separator"></div>
                     </div>
-            
+
                     <div class="block_tools_contaienr">
-            
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/react_icon.svg" alt="">
                             </div>
-            
+
                             <div class="tool_name">
                                 <p class="tool_name_text">ReactJS</p>
                                 <p class="tool_sub_info highlight">Learning in progress</p>
                             </div>
-            
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent fifty">50%</div>
                                 </div>
                             </div>
-            
+
                         </div>
-            
-            
+
+
                     </div>
                 </div>
-            
+
             </div>
 
 
             <div class="tools_section">
-            
+
                 <div class="block left_block front_end remove_bottom_padding_on_block">
                     <div class="block_title_container">
                         <div class="block_title_content">
@@ -367,31 +370,31 @@
                         </div>
                         <div class="main_title_separator"></div>
                     </div>
-            
+
                     <div class="block_tools_contaienr">
-            
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/jquery_icon.svg" alt="">
                             </div>
-            
+
                             <div class="tool_name">
                                 <p class="tool_name_text">JQuery</p>
                             </div>
-            
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent seventy">70%</div>
                                 </div>
                             </div>
-            
+
                         </div>
-            
+
                     </div>
                 </div>
-            
+
                 <div class="block right_block back_end onfront">
-            
+
                     <div class="block_title_container hidden_element">
                         <div class="block_title_content">
                             <img class="hidden_element" src="./icons/framework_icon.svg" alt="">
@@ -399,35 +402,35 @@
                         </div>
                         <div class="main_title_separator hidden_element"></div>
                     </div>
-            
+
                     <div class="block_tools_contaienr ">
-            
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/bootstrap_icon.svg" alt="">
                             </div>
-            
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Bootstrap</p>
                             </div>
-            
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent heighty">80%</div>
                                 </div>
                             </div>
-            
+
                         </div>
-            
-            
+
+
                     </div>
                 </div>
-            
+
             </div>
 
 
             <a href="#client-projects" class="show_work">Completed Projects</a>
-            
+
         </div>
     </div>
     <!--end skills section-->
@@ -442,92 +445,92 @@
                 <p class="skills_category_title_text category_title">UI / UX Design</p>
                 <div class="main_title_separator"></div>
             </div>
-    
+
             <div class="tools_section">
-    
+
                 <div class="block left_block front_end remove_bottom_padding_on_block">
-    
+
                     <div class="block_tools_contaienr">
-    
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/adobexd_icon.svg" alt="">
                             </div>
-    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">AdobeXD</p>
                             </div>
-    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent seventy_five">75%</div>
                                 </div>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/sketch_icon.svg" alt="">
                             </div>
-    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Sketch</p>
                             </div>
-    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent seventy">70%</div>
                                 </div>
                             </div>
-    
+
                         </div>
-    
+
                     </div>
                 </div>
-    
+
                 <div class="block right_block back_end ">
 
                     <div class="block_tools_contaienr">
-    
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/photoshop_icon.svg" alt="">
                             </div>
-    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Photoshop</p>
                             </div>
-    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent seventy">70%</div>
                                 </div>
                             </div>
-    
+
                         </div>
-    
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/figma_icon.svg" alt="">
                             </div>
-    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Figma</p>
                             </div>
-    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent seventy">70%</div>
                                 </div>
                             </div>
-    
+
                         </div>
 
-    
+
                     </div>
                 </div>
-    
+
             </div>
 
             <a target="_blank" href="https://dribbble.com/ephraim" class="show_work">Completed Projects</a>
@@ -541,29 +544,29 @@
 
     <!--start version controler skills section-->
     <div class="skills_section version_controlers">
-    
+
         <div class="main_wrapper">
 
             <div class="skills_category_title next_to_hidden_element_less_margin">
                 <p class="skills_category_title_text category_title">Version Controlers</p>
                 <div class="main_title_separator"></div>
             </div>
-    
+
             <div class="tools_section">
-    
+
                 <div class="block left_block front_end remove_bottom_padding_on_block">
 
                     <div class="block_tools_contaienr">
-    
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/github_icon.svg" alt="">
                             </div>
-    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Github</p>
                             </div>
-    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent sixty">60%</div>
@@ -573,47 +576,47 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="block right_block back_end">
-    
+
                     <div class="block_tools_contaienr">
-    
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/git_icon.svg" alt="">
                             </div>
-    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Git</p>
                             </div>
-    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent sixty">60%</div>
                                 </div>
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
-    
+
             </div>
-    
+
         </div>
     </div>
     <!--end version controler, divers section-->
 
     <!--start version diver  skills section-->
     <div class="skills_section divers_skills web_skills">
-    
+
         <div class="main_wrapper">
             <div class="skills_category_title">
                 <p class="skills_category_title_text category_title">General</p>
                 <div class="main_title_separator"></div>
             </div>
-    
+
             <div class="tools_section">
-    
+
                 <div class="block left_block front_end">
 
                     <div class="block_title_container">
@@ -625,45 +628,45 @@
                     </div>
 
                     <div class="block_tools_contaienr">
-    
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/ms_office_icon.svg" alt="">
                             </div>
-    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">MS-Office Word</p>
                             </div>
-    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent heighty">80%</div>
                                 </div>
                             </div>
-    
+
                         </div>
 
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/ms_excel_icon.svg" alt="">
                             </div>
-                        
+
                             <div class="tool_name">
                                 <p class="tool_name_text">MS-Excel</p>
                             </div>
-                        
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent sixty">60%</div>
                                 </div>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="block right_block back_end">
-                    
+
                     <div class="block_title_container">
                         <div class="block_title_content">
                             <img src="./icons/os_icon.svg" alt="">
@@ -673,45 +676,45 @@
                     </div>
 
                     <div class="block_tools_contaienr">
-                        
+
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/mac_os_icon.svg" alt="">
                             </div>
-    
+
                             <div class="tool_name">
                                 <p class="tool_name_text">Mac iOS-X</p>
                             </div>
-    
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent ninety">90%</div>
                                 </div>
                             </div>
-    
+
                         </div>
 
                         <div class="tool">
                             <div class="tool_logo">
                                 <img src="./icons/ms_windows_icon.svg" alt="">
                             </div>
-                        
+
                             <div class="tool_name">
                                 <p class="tool_name_text">MS-Windows</p>
                             </div>
-                        
+
                             <div class="tool_percent_container">
                                 <div class="tool_percent_content">
                                     <div class="tool_percent ninety">90%</div>
                                 </div>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
-    
+
             </div>
-    
+
         </div>
     </div>
     <!--end version divers skills section-->
@@ -719,34 +722,34 @@
 
     <!--start client projects section-->
     <div id="client-projects" class="skills_section client_project_main_container">
-        
+
         <div class="main_wrapper">
-    
+
             <div class="skills_title_text_content next_to_hidden_element">
                 <p class="bg_main_title">Client Projects</p>
                 <p class="main_title">Client Projects</p>
                 <div class="main_title_separator"></div>
                 <p class="sub_text sub_text_width">From the design concept to a live product, here are some real-life projects that I have built for clients. Please see the details on each block.</p>
             </div>
-    
-            
+
+
             <div class="tools_section">
-                
+
                 <div class="block client_projects">
                     <div class="hover_animate"></div>
                     <div class="block_tools_contaienr">
-    
+
                         <div class="project_description">
-                            
+
                             <div class="client_logo">
                                 <img src="./icons/adrc_logo.svg" alt="">
                             </div>
-    
+
                             <div class="client_name">
                                 <p class="client_name_text client_project_title_resize">ADRC</p>
                                 <div class="main_title_separator"></div>
                             </div>
-    
+
                             <div class="project_overview_container">
                                 <p class="project_overview_text project_text_less_margin">is a web app which allows users to locate Service Providers
                                 by in South-Africa who offer Conciliation, Mediation and Arbitration services in various fields</p>
@@ -756,47 +759,47 @@
                                 <p class="tools_list_title">written in</p>
                                 <p class="tools_list">HTML5/CSS3 | JS | JQUERY | PHP | MySQL</p>
                             </div>
-                            
+
                             <div class="link_to_the_website">
                                 <a class="highlight"  target="_blank" href="https://www.adrc.co.za">Visit the website</a>
                             </div>
-    
+
                         </div>
-    
+
                     </div>
 
                 </div>
-    
+
                 <div class="block middle_block client_projects_middle_block client_projects">
                     <div class="hover_animate"></div>
                     <div class="block_tools_contaienr">
-                    
+
                         <div class="project_description">
-                    
+
                             <div class="client_logo">
                                 <img src="icons/d4u_logo.svg" alt="">
                             </div>
-                    
+
                             <div class="client_name">
                                 <p class="client_name_text client_project_title_resize">DOCTOR4U</p>
                                 <div class="main_title_separator"></div>
                             </div>
-                    
+
                             <div class="project_overview_container">
                                 <p class="project_overview_text project_text_less_margin">is a web app which allows users to locate Doctors, Hospitals, Clinics, Medical Aids, and more, all over South-Africa</p>
                             </div>
-                    
+
                             <div class="project_tools_used project_tools_used_resize">
                                 <p class="tools_list_title">written in</p>
                                 <p class="tools_list">HTML5/CSS3 | JS | JQUERY | PHP | MySQL</p>
                             </div>
-                    
+
                             <div class="link_to_the_website">
                                 <a class="highlight" target="_blank"  href="https://www.doctor4u.co.za">Visit the website</a>
                             </div>
-                    
+
                         </div>
-                    
+
                     </div>
 
                 </div>
@@ -804,40 +807,40 @@
                 <div class="block client_projects">
                     <div class="hover_animate"></div>
                     <div class="block_tools_contaienr">
-                    
+
                         <div class="project_description">
-                    
+
                             <div class="client_logo">
                                 <img src="./icons/adrc_logo.svg" alt="">
                             </div>
-                    
+
                             <div class="client_name">
                                 <p class="client_name_text client_project_title_resize">ADRC MEDIA</p>
                                 <div class="main_title_separator"></div>
                             </div>
-                    
+
                             <div class="project_overview_container">
                                 <p class="project_overview_text project_text_less_margin">is a platform where people can read articles related to law and Alternative Dispute Resolution.</p>
                             </div>
-                    
+
                             <div class="project_tools_used project_tools_used_resize">
                                 <p class="tools_list_title">written in</p>
                                 <p class="tools_list">HTML5/CSS3 | JS | PHP | MySQL</p>
                             </div>
-                    
+
                             <div class="link_to_the_website">
                                 <a class="highlight"  target="_blank" href="https://adrc.co.za/media/welcome-to-adrc-media">Visit the website</a>
                             </div>
-                    
+
                         </div>
-                    
+
                     </div>
 
                 </div>
-    
+
             </div>
-    
-    
+
+
         </div>
 
         <!--shape-->
@@ -852,25 +855,25 @@
 
     <!--start personal projects section-->
     <div id="personal-project" class="skills_section personal_project_main_container">
-    
+
         <div class="main_wrapper">
-    
+
             <div class="skills_title_text_content next_to_hidden_element">
                 <p class="bg_main_title">Personal Projects</p>
                 <p class="main_title">Personal Projects</p>
                 <div class="main_title_separator"></div>
                 <p class="sub_text sub_text_width">Listed below are some of my personal projects powered entirely by various free APIs, such as the Weatherbit (Weather API), Foursquare (Places API), Unsplash (Photos API), and more. For a complete list of APIs used for each project, click the Github icon to the right side of each logo.</p>
             </div>
-    
-    
+
+
             <div class="tools_section">
-    
+
                 <div class="block client_projects personal_project_">
-    
+
                     <div class="block_tools_contaienr">
-    
+
                         <div class="personal_project_description">
-    
+
                             <div class="personal_logo_container eweather">
                                 <div class="personal_logo_content">
                                     <img class="personal_logo" src="./icons/ewather_logo.svg" alt="">
@@ -879,37 +882,37 @@
                                     <a class="gitbut_project" target="_blank" href="https://github.com/Ephrey/weatherApp"><img class="personal_projects_github" src="./icons/github4.svg" alt=""></a>
                                 </div>
                             </div>
-    
+
                             <div class="client_name">
                                 <p class="client_name_text">eWeather</p>
                                 <div class="main_title_separator"></div>
                             </div>
-    
+
                             <div class="project_overview_container">
                                 <p class="project_overview_text">A Multilanguage Web App that provides weather information to the user base on their current location.</p>
                             </div>
-    
+
                             <div class="project_tools_used">
                                 <p class="tools_list_title">written in</p>
                                 <p class="tools_list">HTML5/CSS3 | JAVASCRIPT</p>
                             </div>
-    
+
                             <div class="link_to_the_website">
                                 <a class="highlight" target="_blank"  href="https://www.ephraimilunga.co.za/eweather">visit the website</a>
                             </div>
-    
+
                         </div>
-    
+
                     </div>
                     <div class="block_animate block_long ewather_long"></div>
                 </div>
-    
+
                 <div class="block middle_block client_projects personal_project_ personal_project_midddle">
-    
+
                     <div class="block_tools_contaienr">
-                    
+
                         <div class="personal_project_description">
-                    
+
                             <div class="personal_logo_container eplaces">
                                 <div class="personal_logo_content">
                                     <img class="personal_logo" src="./icons/eplaces_logo.png" alt="">
@@ -918,37 +921,37 @@
                                     <a class="gitbut_project" href="#"><img class="personal_projects_github" src="./icons/github4.svg" alt=""></a>
                                 </div>
                             </div>
-                    
+
                             <div class="client_name">
                                 <p class="client_name_text">ePlaces</p>
                                 <div class="main_title_separator"></div>
                             </div>
-                    
+
                             <div class="project_overview_container">
                                 <p class="project_overview_text">Searching for the best places to eat, drink, have fun or visit to any city in the world? If yes use <a target="_blank" href="https://www.ephraimilunga.co.za/eplaces" class="highlight">ePlaces</a>.</p>
                             </div>
-                    
+
                             <div class="project_tools_used">
                                 <p class="tools_list_title">written in</p>
                                 <p class="tools_list">HTML5/CSS3 | JAVASCRIPT</p>
                             </div>
-                    
+
                             <div class="link_to_the_website">
                                 <a class="highlight" target="_blank" href="https://www.ephraimilunga.co.za/eplaces">Visit the website</a>
                             </div>
-                    
+
                         </div>
-                    
+
                     </div>
                     <div class="block_animate block_long eplaces_long"></div>
                 </div>
-    
+
                 <div class="block client_projects personal_project_">
-    
+
                     <div class="block_tools_contaienr">
-                    
+
                         <div class="personal_project_description">
-                    
+
                             <div class="personal_logo_container egallery">
                                 <div class="personal_logo_content">
                                     <img class="personal_logo" src="./icons/egallery_logo.png" alt=" ">
@@ -957,36 +960,36 @@
                                     <a class="gitbut_project" href="https://github.com/Ephrey/eGallery"><img class="personal_projects_github" src="./icons/github4.svg" alt=""></a>
                                 </div>
                             </div>
-                    
+
                             <div class="client_name">
                                 <p class="client_name_text">eGallery</p>
                                 <div class="main_title_separator"></div>
                             </div>
-                    
+
                             <div class="project_overview_container">
                                 <p class="project_overview_text">A photos base web app which gives the user the sensation of being around the world most beautiful cities through <a target="_blank" href="https://www.ephraimilunga.co.za/egallery" class="highlight">images</a>.</p>
                             </div>
-                    
+
                             <div class="project_tools_used">
                                 <p class="tools_list_title">written in</p>
                                 <p class="tools_list">HTML5/CSS3 | JAVASCRIPT</p>
                             </div>
-                    
+
                             <div class="link_to_the_website">
                                 <a class="highlight" target="_blank" href="https://www.ephraimilunga.co.za/egallery">Visit the website</a>
                             </div>
-                    
+
                         </div>
-                    
+
                     </div>
                     <div class="block_animate block_long egallery_long"></div>
                 </div>
-    
+
             </div>
-    
-    
+
+
         </div>
-    
+
         <!--shape-->
         <div class="personal_projects_shape">
             <div> </div>
@@ -1000,25 +1003,25 @@
 
     <!--start cerificate of completion section-->
     <div id="achievements" class="skills_section cerificate_section">
-    
+
         <div class="main_wrapper">
-    
+
             <div class="skills_title_text_content next_to_hidden_element">
                 <p class="bg_main_title">Certificates</p>
                 <p class="main_title">Certificates</p>
                 <div class="main_title_separator"></div>
                 <p class="sub_text sub_text_width">Listed below are the certificates of completion that I have earned throughout my career as Developer and one from Cisco as part of my Computer Networking Academic years</p>
             </div>
-    
-    
+
+
             <div class="tools_section certificate_block_container">
-    
+
                 <div class="block  block_certificate">
                     <img class="medal_certificate" src="./icons/medal.svg" alt="">
                     <div class="block_tools_contaienr">
-    
+
                         <div class="certificate_description">
-    
+
                             <div class="certificate_logo_container mongodb_univ">
 
                                 <div class="certificate_logo_content">
@@ -1026,112 +1029,112 @@
                                 </div>
 
                             </div>
-    
+
                             <div class="certificate_overview_container">
                                 <p class="certificate_overview_text">Throughout this course, I have learned the fundamental of MongoDB Compass, Atlas and the Query Language</p>
                             </div>
-    
-    
+
+
                             <div class="link_to_the_certificate">
                                 <a  data-name="mongodb" class="highlight open_certificate mongodb show_certificate" href="#">Open the certificate</a>
                             </div>
-    
+
                         </div>
-    
+
                     </div>
-    
+
                 </div>
-    
+
                 <div class="block middle_block  block_certificate">
                     <img class="medal_certificate" src="./icons/medal.svg" alt="">
                     <div class="block_tools_contaienr">
-                    
+
                         <div class="certificate_description">
-                    
+
                             <div class="certificate_logo_container fcc_univ">
-                    
+
                                 <div class="certificate_logo_content">
                                     <img class="certificate_institute_logo" src="./icons/freecodecamp_logo.svg" alt="">
                                 </div>
-                    
+
                             </div>
-                    
+
                             <div class="certificate_overview_container">
                                 <p class="certificate_overview_text">From the basics to advanced concepts such as ES6, this course gives a solid understanding of Javascript.</p>
                             </div>
-                    
-                    
+
+
                             <div class="link_to_the_certificate">
                                 <a data-name="fcc" class="highlight open_certificate fcc show_certificate" href="#">Open the certificate</a>
                             </div>
-                    
+
                         </div>
-                    
+
                     </div>
-    
+
                 </div>
-    
+
                 <div class="block middle_block_last  block_certificate">
                     <img class="medal_certificate" src="./icons/medal.svg" alt="">
                     <div class="block_tools_contaienr">
-                    
+
                         <div class="certificate_description">
-                    
+
                             <div class="certificate_logo_container mosh_univ">
-                    
+
                                 <div class="certificate_logo_content">
                                     <img class="certificate_institute_logo" src="./icons/mosh_logo.svg" alt="">
                                 </div>
-                    
+
                             </div>
-                    
+
                             <div class="certificate_overview_container">
                                 <p class="certificate_overview_text">This course teaches the best practices as well as how Javascript works under the hood.</p>
                             </div>
-                    
-                    
+
+
                             <div class="link_to_the_certificate">
                                 <a data-name="mosh" class="highlight open_certificate mosh show_certificate" href="#">Open the certificate</a>
                             </div>
-                    
+
                         </div>
-                    
+
                     </div>
-    
+
                 </div>
 
                 <div class="block block_certificate">
                     <img class="medal_certificate" src="./icons/medal.svg" alt="">
                     <div class="block_tools_contaienr">
-                
+
                         <div class="certificate_description">
-                
+
                             <div class="certificate_logo_container cisco_univ">
-                
+
                                 <div class="certificate_logo_content">
                                     <img class="certificate_institute_logo" src="./icons/cisco_logo.svg" alt="">
                                 </div>
-                
+
                             </div>
-                
+
                             <div class="certificate_overview_container">
                                 <p class="certificate_overview_text">Throughout my Academic Years at Cisco Network Academy, I have learned the fundamental of computer networking</p>
                             </div>
-                
-                
+
+
                             <div class="link_to_the_certificate">
                                 <a data-name="cisco" class="highlight open_certificate cisco show_certificate" href="#">Open the certificate</a>
                             </div>
-                
+
                         </div>
-                
+
                     </div>
-                
+
                 </div>
-    
+
             </div>
-    
-    
+
+
         </div>
     </div>
     <!--end cerificate of completion section-->
@@ -1221,7 +1224,7 @@
         </div>
     </div>
     <!--end footer-->
-    
+
 </main>
 
 <div class="profile_picture_button">

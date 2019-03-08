@@ -234,6 +234,23 @@ main div.nav_bar {
   margin-top: -90px;
 }
 
+main div.nav_bar div.main_fill {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main div.nav_bar div.main_fill div.fill {
+  height: 100%;
+  width: 0%;
+  background-color: #e00303;
+}
+
 main div.nav_bar div.follow_link {
   position: absolute;
   height: 8px;
